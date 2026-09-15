@@ -20,26 +20,26 @@ Abaixo está o diagrama entidade-relacionamento que representa a estrutura lógi
 
 ```mermaid
 erDiagram
-    USUARIO {
+    usuario {
         int id PK
         string nome
         string email
     }
-    PROJETO {
+    projeto {
         int id PK
         string titulo
         date data_inicio
         date data_termino
     }
-    TAREFA {
+    tarefa {
         int id PK
         int projeto_id FK
         int responsavel_id FK
         string descricao
         string status
     }
-    USUARIO ||--o{ TAREFA : executa
-    PROJETO ||--|{ TAREFA : possui
+    usuario ||--o{ tarefa : executa
+    projeto ||--|{ tarefa : possui
 
 ## 3. Estruturação do Repositório
 

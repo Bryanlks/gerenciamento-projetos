@@ -40,6 +40,7 @@ erDiagram
     }
     usuario ||--o{ tarefa : executa
     projeto ||--|{ tarefa : possui
+```
 
 ## 3. Estruturação do Repositório
 
